@@ -17,14 +17,16 @@
 header {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    background-color: #cecaca;
+    border-bottom: #0D0D0D solid 1px;
+    height: 130px;
 }
 .container {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
     align-items: center;
-
 }
 .logo {
     display: flex;
@@ -32,6 +34,54 @@ header {
 }
 .logo img {
     width: 250px;
+}
+.banner {
+    display: flex;
+    width: 100%;
+}
+.img_loja {
+    background: url(../imagens/banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    opacity: 80%;
+    height: 300px;
+    display: flex;
+    flex: 2;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 3px 3px 20px black;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+.adress {
+    display: flex;
+    flex: 1;
+    text-align: left;
+}
+.contatos {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.cont_social_img {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+.social img:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 15px black;
+    border-radius: 50%;
+    transition: 0.1s;
+}
+}
+.cont_social_text {
+    display: flex;
+    margin-left: 8px;
+}
+.social img {
+    width: 50px;
+    margin-top: 10px;
 }
 section {
     display: flex;
@@ -41,15 +91,27 @@ section {
     list-style: none;
     display: flex;
 }
-.container a {
+header .container a {
     padding: 15px;
     margin-left: 10px;
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
-.container a:hover {
+header .container a:hover {
     background-color: var(--cor2);
     color: white;
+}
+.top_section {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top_section h1 {
+    width: 100%;
+    text-align: center;
+    text-shadow: 3px 3px 15px black;
 }
 .destaques {
     display: flex;
@@ -69,6 +131,20 @@ section {
 .destaques img:hover {
     transform: translate(-6px, -6px);
 }
+.conferir_detaque {
+    margin-top: 14px;
+}
+.conferir_detaque a {
+    background-color: #F28705;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.615);
+}
+.conferir_detaque a:hover {
+    background-color: var(--cor2);
+}
 .dest {
     background-color: var(--cor3);
     margin: 20px;
@@ -77,6 +153,28 @@ section {
     align-items: center;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.519);
     border-radius: 4px;
-    height: auto;
-    width: 350px;
+    flex: 1;
+    height: 550px;
+}
+footer {
+    background-color: #666565;
+    height: 200px;
+}
+.footer_1, .footer_2, .footer_3 {
+    display: flex;
+    color: white;
+}
+.copy {
+    background-color: #0D0D0D;
+    color: white;
+    text-align: center;
+    padding: 6px;
+}
+.copy a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.copy a:hover {
+    text-decoration: underline;
 }
