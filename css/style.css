@@ -183,6 +183,7 @@ footer {
     flex: 1;
     flex-direction: column;
     align-self: flex-start;
+    margin-top: 10px;
 }
 .ul_footer ul {
     list-style: none;
