@@ -1,0 +1,17 @@
+@charset "UTF-08";
+
+@media (max-width:680px) {
+    .menu_mobile {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        display: none;
+    }
+    footer {
+        height: 300px;
+    }
+    .quebra {
+        flex-wrap: wrap;
+    }
+}

@@ -25,7 +25,7 @@ header {
 .container {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     align-items: center;
 }
 .logo {
@@ -33,7 +33,18 @@ header {
     align-items: center;
 }
 .logo img {
-    width: 250px;
+    width: 200px;
+}
+.menu_mobile {
+    display: none;
+    width: 44px;
+    height: 44px;
+}
+.menu_linha {
+    height: 6px;
+    background-color: #F23005;
+    border-radius: 3px;
+    margin-top: 6px;
 }
 .banner {
     display: flex;
@@ -43,12 +54,10 @@ header {
     background: url(../imagens/banner.jpg);
     background-size: cover;
     background-position: center center;
-    opacity: 80%;
     height: 300px;
     display: flex;
     flex: 2;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-radius: 10px;
     box-shadow: 3px 3px 20px black;
     margin-left: 20px;
     margin-right: 40px;
@@ -79,9 +88,14 @@ header {
     display: flex;
     margin-left: 8px;
 }
+.p_social {
+    color: white;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
 .social img {
-    width: 50px;
-    margin-top: 10px;
+    width: 30px;
+    margin-top: 4px;
 }
 section {
     display: flex;
@@ -96,6 +110,7 @@ header .container a {
     margin-left: 10px;
     text-decoration: none;
     color: rgb(0, 0, 0);
+    font-size: 1.1em;
 }
 header .container a:hover {
     background-color: var(--cor2);
@@ -111,7 +126,7 @@ header .container a:hover {
 .top_section h1 {
     width: 100%;
     text-align: center;
-    text-shadow: 3px 3px 15px black;
+    text-shadow: 1px 1px 15px black;
 }
 .destaques {
     display: flex;
@@ -154,21 +169,54 @@ header .container a:hover {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.519);
     border-radius: 4px;
     flex: 1;
-    height: 550px;
+    height: 570px;
 }
 footer {
-    background-color: #666565;
-    height: 200px;
+    background-color: #414141;
+    height: 210px;
+    display: flex;
+    justify-content: center;
 }
 .footer_1, .footer_2, .footer_3 {
     display: flex;
     color: white;
+    flex: 1;
+    flex-direction: column;
+    align-self: flex-start;
+}
+.ul_footer ul {
+    list-style: none;
+    display: block;
+}
+.ul_footer a {
+    color: white;
+    padding: 3px;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+.ul_footer a:hover {
+    color:var(--cor2)
+}
+.h2_footer {
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.dev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dev img {
+    width: 120px;
+    text-align: center;
 }
 .copy {
-    background-color: #0D0D0D;
     color: white;
     text-align: center;
     padding: 6px;
+    display: block;
 }
 .copy a {
     color: white;
@@ -177,4 +225,8 @@ footer {
 }
 .copy a:hover {
     text-decoration: underline;
+}
+.quebra {
+    display: flex;
+    width: 100%;
 }
